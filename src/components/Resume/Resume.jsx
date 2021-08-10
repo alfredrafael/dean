@@ -23,6 +23,9 @@ const Resume = () => {
             <p>
               LinkedIn: <a href="https://www.linkedin.com/in/dean-corsaro-a6721a156/">https://www.linkedin.com/in/dean-corsaro</a>
             </p>
+            <p id="objective">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat architecto nesciunt impedit ipsum. Vitae inventore est aperiam magni dicta iure ducimus repudiandae mollitia atque dignissimos vel, amet voluptatum consequuntur enim.
+            </p>
             <dl id="skillset">
               <dt>Skills Set</dt>
               <dd>
@@ -31,12 +34,12 @@ const Resume = () => {
 
                   <Col className="skillColumn1" style={{ flex: '1', }}>
 
-                    <p><img src="https://www.alfredorafael.com/wp-content/uploads/2021/08/logo.png" style={{maxWidth: '20%'}} alt="logo"/>Autodesk Revit</p>
-                    <p><img src="https://www.alfredorafael.com/wp-content/uploads/2021/08/262-2621689_autocad-autocad-logo-svg.png" style={{maxWidth: '10%', marginLeft: '4%'}} alt="logo"/> &nbsp; Autodesk Auto CAD</p>                
+                    <p><img src="https://www.alfredorafael.com/wp-content/uploads/2021/08/logo.png" style={{maxWidth: '20%', filter: 'grayscale(100)'}} alt="logo"/>Autodesk Revit</p>
+                    <p><img src="https://www.alfredorafael.com/wp-content/uploads/2021/08/262-2621689_autocad-autocad-logo-svg.png" style={{maxWidth: '10%', marginLeft: '4%', filter: 'grayscale(100)'}} alt="logo"/> &nbsp; Autodesk Auto CAD</p>                
                   </Col>
 
                   <Col className="skillColumn2" style={{ flex: '1', }}>
-                  <p><img src="https://www.alfredorafael.com/wp-content/uploads/2021/08/adobe-creative-cloud-1855032-1571413.webp" style={{maxWidth: '12%', marginLeft: '4%'}} alt="logo"/>&nbsp; Adobe Suite</p>
+                  <p><img src="https://www.alfredorafael.com/wp-content/uploads/2021/08/adobe-creative-cloud-1855032-1571413.webp" style={{maxWidth: '12%', marginLeft: '4%', filter: 'grayscale(100)'}} alt="logo"/>&nbsp; Adobe Suite</p>
                     <p><img src="https://www.alfredorafael.com/wp-content/uploads/2021/08/twinmotion-128px-hd.png" style={{maxWidth: '10%', marginLeft: '4%'}} alt="logo"/> &nbsp; Twin Motion</p>
                   </Col>
 
