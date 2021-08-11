@@ -1,6 +1,6 @@
 import React from "react";
 import "./resume.css";
-import { Container, Col} from "reactstrap";
+import { Container, Col } from "reactstrap";
 import Fade from "react-reveal/Fade";
 
 const Resume = () => {
@@ -9,125 +9,311 @@ const Resume = () => {
       <Container id="resumeContainer">
         <Fade>
           <div id="resume">
-            <img className="profile-photo"
-              src="https://scontent-bos3-1.xx.fbcdn.net/v/t1.6435-9/214358637_5593584167378522_8732891868090118653_n.jpg?_nc_cat=104&ccb=1-4&_nc_sid=09cbfe&_nc_ohc=-ZwMeGlfvZ8AX-eea6m&_nc_ht=scontent-bos3-1.xx&oh=a25fe1041d9df5f7df06f82c23cd32e6&oe=6138D1D5"
-              alt="Dean Corsaro"
+            <img
+              className="profile-photo"
+              src="https://www.alfredorafael.com/wp-content/uploads/2021/08/Nora_graduation.jpeg"
+              alt="Nora Zadi"
             />
-            <h1>Dean A. Corsaro Jr</h1>
+            <h1>Nora Zadi</h1>
+            <div style={{ display: "flex" }}>
+              <p style={{ marginRight: "2em" }}>
+                <i class="fas fa-phone-square-alt"></i>{" "}
+                <a href="tel:+13233601842">(323) 360-1842</a>
+              </p>
+              <p>
+                <i class="fas fa-envelope"></i>{" "}
+                <a href="mailto:norazadi@bu.edu">norazadi@bu.edu</a>
+              </p>
+            </div>
             <p>
-              Cell: <a href="#">412-320-9569</a>
+              <i class="fab fa-linkedin"></i>{" "}
+              <a href="https://www.linkedin.com/in/djedjanorazadi/">
+                https://www.linkedin.com/in/djedjanorazadi/
+              </a>
             </p>
-            <p>
-              Email: <a href="#">DeanCorsaro14@gmail.com</a>
-            </p>
-            <p>
-              LinkedIn: <a href="https://www.linkedin.com/in/dean-corsaro-a6721a156/">https://www.linkedin.com/in/dean-corsaro</a>
-            </p>
-            <p id="objective">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat architecto nesciunt impedit ipsum. Vitae inventore est aperiam magni dicta iure ducimus repudiandae mollitia atque dignissimos vel, amet voluptatum consequuntur enim.
-            </p>
-            <dl id="skillset">
-              <dt>Skills Set</dt>
+            <br />
+
+            <dl>
+              <dt>Education</dt>
               <dd>
-                <h2>Architecture Software</h2><br />
-                <div className="2skillColumns" style={{ display: 'flex' }}>
-
-                  <Col className="skillColumn1" style={{ flex: '1', }}>
-
-                    <p><img src="https://www.alfredorafael.com/wp-content/uploads/2021/08/logo.png" style={{maxWidth: '20%', filter: 'grayscale(100)'}} alt="logo"/>Autodesk Revit</p>
-                    <p><img src="https://www.alfredorafael.com/wp-content/uploads/2021/08/262-2621689_autocad-autocad-logo-svg.png" style={{maxWidth: '10%', marginLeft: '4%', filter: 'grayscale(100)'}} alt="logo"/> &nbsp; Autodesk Auto CAD</p>                
-                  </Col>
-
-                  <Col className="skillColumn2" style={{ flex: '1', }}>
-                  <p><img src="https://www.alfredorafael.com/wp-content/uploads/2021/08/adobe-creative-cloud-1855032-1571413.webp" style={{maxWidth: '12%', marginLeft: '4%', filter: 'grayscale(100)'}} alt="logo"/>&nbsp; Adobe Suite</p>
-                    <p><img src="https://www.alfredorafael.com/wp-content/uploads/2021/08/twinmotion-128px-hd.png" style={{maxWidth: '10%', marginLeft: '4%'}} alt="logo"/> &nbsp; Twin Motion</p>
-                  </Col>
-
+                <div className="education-item">
+                  <h2>
+                    Masters in Science, Financial Management<span>2021</span>
+                  </h2>
+                  <p>
+                    <strong>Boston University</strong> – Boston, MA
+                    <br /> <br />
+                    <strong>Minor:</strong> International Finance
+                    <br />
+                    <strong>Research: </strong>
+                    <i>
+                      Compared returns trends & performance in IPOs to develop a
+                      regression model using EViews, achieving 95% accuracy
+                    </i>
+                  </p>
                 </div>
-
-                <hr style={{ height: '1px', border: 'none', backgroundColor: 'rgba(105, 186, 213, 0.5)' }} />
+                <hr
+                  style={{
+                    height: "1px",
+                    border: "none",
+                    backgroundColor: "#d3d3d3",
+                    maxWidth: "30%",
+                  }}
+                />
+                <div className="education-item">
+                  <h2>
+                    Certificate in Finance<span>2019</span>
+                  </h2>
+                  <p>
+                    <strong>University of California</strong> – Los Angeles, CA
+                    <br />
+                  </p>
+                </div>
+                <hr
+                  style={{
+                    height: "1px",
+                    border: "none",
+                    backgroundColor: "#d3d3d3",
+                    maxWidth: "30%",
+                  }}
+                />
+                <div className="education-item">
+                  <h2>
+                    Bachelor of Science in Finance<span>2018</span>
+                  </h2>
+                  <p>
+                    <strong>California State University</strong> – Northridge,
+                    CA
+                    <br /> <br />
+                    <strong>Honors:</strong> Dean’s List (3 semesters
+                    consecutives)
+                    <br />
+                    <strong>GPA:</strong> 3.40/4.0
+                  </p>
+                </div>
+                <hr
+                  style={{
+                    marginTop: "7%",
+                    height: "1px",
+                    border: "none",
+                    backgroundColor: "rgba(105, 186, 213, 0.5)",
+                  }}
+                />
               </dd>
             </dl>
 
             <dl>
               <dt>Experience</dt>
               <dd>
-              <div className="experience-item" style={{marginBottom: '4%'}}>
-                <h2>
-                Architectural Designer | Residential<span>05/2019-08/2020</span>
-                </h2>
-                <h6 style={{marginBottom: '3%'}}>Mitchell Construction Group – Boston, MA</h6>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                </ul>
+                <div className="experience-item" style={{ marginBottom: "4%" }}>
+                  <h2>
+                    Financial Analyst Intern
+                    <span>Jun 2018 – Aug 2018</span>
+                  </h2>
+                  <h6 style={{ marginBottom: "3%" }}>
+                    Bloomfield Investment | Abidjan, Côte d’Ivoire
+                  </h6>
+                  <ul>
+                    <li>
+                      Analyzed financial statements of various enterprises, and
+                      prepared documents and presentations for rating committee
+                    </li>
+                    <li>
+                      Performed quantitative and qualitative analysis of firms
+                      by using company generated information
+                    </li>
+                    <li>
+                      Conducted research in teams, and SWOT analysis of
+                      companies for better decision making
+                    </li>
+                    <li>
+                      Constructed and spearheaded interview summaries of heads
+                      of several institutions, important in attributing credit
+                      ratings (i.e., AAA, BBB, etc.) to those institutions
+                    </li>
+                  </ul>
                 </div>
-                <div className="experience-item" style={{marginBottom: '4%'}}>
-                <h2>
-                Architectural Designer | Healthcare<span>05/2019-08/2020</span>
-                </h2>
-                <h6 style={{marginBottom: '3%'}}>Tsoi Kobus Associates – Boston, MA</h6>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                </ul>
+
+                <hr
+                  style={{
+                    height: "1px",
+                    border: "none",
+                    backgroundColor: "#d3d3d3",
+                    maxWidth: "30%",
+                  }}
+                />
+
+                <div className="experience-item" style={{ marginBottom: "4%" }}>
+                  <h2>
+                    Mergers & Acquisitions Intern
+                    <span>Nov 2017 – Apr 2018</span>
+                  </h2>
+                  <h6 style={{ marginBottom: "3%" }}>
+                    Piana Investment | Los Angeles, CA
+                  </h6>
+                  <ul>
+                    <li>
+                      Evaluated investment opportunities (analysis of company
+                      financials, markets, competition and strategy)
+                    </li>
+                    <li>
+                      Forecasted and reviewed financial models, and conducted
+                      industry and market analysis to support origination
+                      efforts
+                    </li>
+                    <li>
+                      Created investor deck, executive summary and supported
+                      transactions (investment papers, due diligence)
+                    </li>
+                    <li>
+                      Coordinated information flows and served as primary
+                      contact with clients
+                    </li>
+                  </ul>
                 </div>
-                <div className="experience-item" style={{marginBottom: '4%'}}>
-                <h2>
-                Architectural Designer | Healthcare + <span>05/2016–03/2019</span>
-                </h2>
-                <h6 style={{marginBottom: '3%'}}>Avanti Architects Ltd. – Pittsburgh, PA</h6>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                </ul>
+
+                <hr
+                  style={{
+                    height: "1px",
+                    border: "none",
+                    backgroundColor: "#d3d3d3",
+                    maxWidth: "30%",
+                  }}
+                />
+
+                <div className="experience-item" style={{ marginBottom: "4%" }}>
+                  <h2>
+                    Investment Banking Analyst <span>Jun 2017 – Aug 2017</span>
+                  </h2>
+                  <h6 style={{ marginBottom: "3%" }}>
+                    New York Bay Capital | New York, NY
+                  </h6>
+                  <ul>
+                    <li>
+                      Developed financial models and company’s valuations using
+                      multiples, comparable company, and DCF analysis
+                    </li>
+                    <li>
+                      Coordinated client meetings with executives and business
+                      owners to discuss key metrics for business valuation
+                    </li>
+                    <li>
+                      Prepared investor presentation materials: financial
+                      models, industry-specific research for clients, pitchbook,
+                      information memoranda, executive summary etc
+                    </li>
+                  </ul>
                 </div>
-                <div className="experience-item" style={{marginBottom: '4%'}}>
-                <h2>
-                Estimator<span>02/2015–05/2015</span>
-                </h2>
-                <h6 style={{marginBottom: '3%'}}>New England Window Systems – SouthBoston, MA</h6>
-                <ul>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                  <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                </ul>
+                <div className="experience-item" style={{ marginBottom: "4%" }}>
+                  <h2>
+                    Budget Direction Intern
+                    <span>Jun 2015 – Aug 2015</span>
+                  </h2>
+                  <h6 style={{ marginBottom: "3%" }}>
+                    CIE | Abidjan, Cote d’Ivoire
+                  </h6>
+                  <ul>
+                    <li>
+                      Managed the assessment of company’s vehicle to keep track
+                      the development of the Geo-location project
+                    </li>
+                    <li>
+                      Analyzed financials statement with Excel to determine
+                      geo-location impact on company funding
+                    </li>
+                    <li>
+                      Monitored carbon use, speed and trajectory of the 1,100
+                      company vehicles to record expenses and increase
+                      productivity
+                    </li>
+                  </ul>
                 </div>
-                <hr style={{ height: '1px', border: 'none', backgroundColor: 'rgba(105, 186, 213, 0.5)' }} />
+                <hr
+                  style={{
+                    height: "1px",
+                    border: "none",
+                    backgroundColor: "rgba(105, 186, 213, 0.5)",
+                  }}
+                />
               </dd>
             </dl>
-            
+
             <dl>
-              <dt>Education</dt>
+              <dt>Leadership</dt>
               <dd>
-                <h2>Masters of Architecture, (M-Arch.) <span>2018</span></h2>
+                <h2>
+                  Vice-President Scholarships and Awards
+                  <span>2016</span>
+                </h2>
                 <p>
-                  <strong>Wentworth Institute of Technology </strong>– Boston, MA 
+                  <strong>Delta Sigma Pi | CSUN </strong>– Northridge, CA
                   <br />
-                  <strong>Minor:</strong> Applied Mathematics
+                  <ul>
+                    <li>
+                      Implemented mentorship programs to foster and recognize
+                      member’s academic achievement improving grades by 8%
+                    </li>
+                    <li>
+                      Guided and mentored award application process to recognize
+                      member’s achievement and maintain chapter recognition
+                    </li>
+                    <li>
+                      Oversaw chapter scholarships administration to maintain
+                      programs for academic achievement
+                    </li>
+                  </ul>
                 </p>
-                <br/>
-                <h2>Bachelor of Science, Architecture (B.S.–Arch.)<span>2017</span></h2>
-                <p>
-                  <strong>Wentworth Institute of Technology </strong>– Boston, MA 
-                </p>
-                <hr style={{ marginTop: '7%', height: '1px', border: 'none', backgroundColor: 'rgba(105, 186, 213, 0.5)' }} />
+                <hr
+                  style={{
+                    marginTop: "7%",
+                    height: "1px",
+                    border: "none",
+                    backgroundColor: "rgba(105, 186, 213, 0.5)",
+                  }}
+                />
               </dd>
             </dl>
+
             <dl>
-              <dt>Other Skills</dt>
+              <dt>Skills</dt>
               <dd>
-                <h2>Software</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ab pariatur corporis libero expedita aut laudantium debitis, nam excepturi possimus, ipsa qui beatae provident tenetur cum est odio? Dolorem, perferendis!
-                </p>
+                <h2>Software & Analysis</h2>
+                <div className="skills-item flexed-skills">
+                  <p>
+                    <ul>
+                      <li>Python</li>
+                      <li>Access</li>
+                      <li>E-Views</li>
+                      <li>Financial Modeling</li>
+                      <li>Financial Analysis & Reporting</li>
+                      <li>Forecasting</li>
+                    </ul>
+                  </p>
+                  <p>
+                    <ul>
+                      <li>Valuation</li>
+                      <li>Research</li>
+                      <li>Regression Analysis</li>
+                      <li>Corporate Finance & Consulting</li>
+                      <li>Bloomberg Certificate</li>
+                    </ul>
+                  </p>
+                </div>
+
                 <h2>Communication skills</h2>
-                <p>
-                  Microsoft productivity software (Word, Excel, etc), Adobe
-                  Creative Suite, Windows
-                </p>
+                <p>Native fluence in both English and French</p>
+
+                <hr
+                  style={{
+                    marginTop: "7%",
+                    height: "1px",
+                    border: "none",
+                    backgroundColor: "rgba(105, 186, 213, 0.5)",
+                  }}
+                />
               </dd>
             </dl>
+
             <dl>
               <dt>References</dt>
               <dd>Available on request</dd>
